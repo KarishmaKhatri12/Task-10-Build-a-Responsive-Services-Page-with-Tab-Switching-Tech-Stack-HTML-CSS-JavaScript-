@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">My Services</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p class="section-intro">We provide a wide range of technology services tailored to your business growth and innovation.</p>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="web">Web Development</button>
+        <button class="tab-btn" data-tab="app">Mobile App Development</button>
+        <button class="tab-btn" data-tab="marketing">Digital Marketing</button>
+      </div>
+
+      <div class="tab-content active" id="web">
+        <h3>Web Development</h3>
+        <p>We design and develop responsive, secure, and modern websites.</p>
+        <button class="learn-more" data-target="web-info">Learn More</button>
+        <div class="more-info" id="web-info">
+          <p>Our websites are built using HTML, CSS, JavaScript, and frameworks like React and Django. We ensure SEO optimization, speed, and full responsiveness.</p>
+          <img src="web.jpg" alt="Web Design">
+        </div>
+      </div>
+
+      <div class="tab-content" id="app">
+        <h3>Mobile App Development</h3>
+        <p>Get powerful Android and iOS apps for your business.</p>
+        <button class="learn-more" data-target="app-info">Learn More</button>
+        <div class="more-info" id="app-info">
+          <p>We build native and cross-platform apps using Flutter, Kotlin, and React Native. Our apps are fast, secure, and user-friendly.</p>
+          <img src="mobile.jpg" alt="App Development">
+        </div>
+      </div>
+
+      <div class="tab-content" id="marketing">
+        <h3>Digital Marketing</h3>
+        <p>Reach a larger audience and boost your brand visibility.</p>
+        <button class="learn-more" data-target="marketing-info">Learn More</button>
+        <div class="more-info" id="marketing-info">
+          <p>We offer SEO, content creation, PPC campaigns, and social media management. Our strategies are results-driven and data-backed.</p>
+          <img src="digital.jpg" alt="Digital Marketing">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
